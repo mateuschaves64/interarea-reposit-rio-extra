@@ -1,0 +1,193 @@
+@import url();
+:root {
+    --cor-primaria: #FFF0E3;
+    --cor-secundaria: #F5F5F5;
+    --font-primaria: #83553B;
+    --font-secundaria: #0c0c0c;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerCadastro {
+    background-color: var(--cor-secundaria);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-primaria);
+    width: 100%;
+    height: 130px;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.cadastroSection {
+    background-color: var(--cor-secundaria);
+    color: var(--font-primaria);
+    width: 66%;
+    height: 760px;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastroSection input {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: none;
+    height: 50px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    outline: none;
+    margin-bottom: 20px;
+    gap: 34px;
+}
+
+#Esp-nome,
+#Esp-email {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    box-shadow: none;
+}
+
+.infosadicionais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.infosadicionais2 {
+    display: contents;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 220px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+select:hover {
+    background-color: #f0f0f0;
+}
+
+.itemGrid select {
+    width: 100%;
+}
+
+.camposTerciarios {
+    display: flex;
+    gap: 20px;
+}
+
+.bebidasAlcoolicas,
+.musicaAlta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.opcoes {
+    display: flex;
+    gap: 10px;
+}
+
+.opcoes input {
+    display: none;
+}
+
+.opcoes label {
+    padding: 10px 18px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.opcoes input:checked+label {
+    background: #e0e0e0;
+}
+
+.camposSecundarios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#orcamento {
+    display: flex;
+    flex-direction: row;
+}
+
+.bebidasAlcoolicas,
+.musicaAlta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camposTerciarios {
+    display: flex;
+    flex-direction: row;
+    /* garante linha */
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#botaoEnviar {
+    background-color: rgb(121, 149, 121);
+    color: white;
+    width: 440px;
+    height: 36px;
+    border-radius: 14px;
+    border: none;
+}
